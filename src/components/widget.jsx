@@ -11,7 +11,7 @@ const Widget = ({ type }) => {
         title: "Ocupación mes anterior",
         total: 600,
         percent: 60,
-        link: <span to="/hotel">Ver</span>,
+        link: <Link to="/hotel">Ver</Link>,
       };
       break;
     case "currentMonth":
@@ -28,7 +28,7 @@ const Widget = ({ type }) => {
 
   return (
     <div
-      className="w-60 h-40 flex  rounded-2xl p-4 bg-red-100 sm:flex-grow sm:m-3 widget "
+      className="w-60 h-40 flex  rounded-2xl p-4 bg-red-100 flex-grow m-3 "
       id="widget"
     >
       <div className="w-1/2 flex flex-col space-y-4">
