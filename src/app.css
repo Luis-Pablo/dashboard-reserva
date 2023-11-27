@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
 /* sidebar*/
 #sidebar span{
     color: black;

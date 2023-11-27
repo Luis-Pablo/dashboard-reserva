@@ -61,7 +61,7 @@ const Chart  = () => {
     return (
       <div
         style={{
-          width: 400,
+          width:" 100%",
           height: 180,
           flexShrink: 2,
           backgroundColor: "antiquewhite",

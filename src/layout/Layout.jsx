@@ -9,7 +9,7 @@ const Layout = () => {
 
   return (
     <>
-      <div className="flex overflow-hidden pe-2 " id={contextTheme}>
+      <div className="flex overflow-hidden w-full pe-2 " id={contextTheme}>
         <Sidebar />
         <div className="w-full  flex-col">
           <Navbar />

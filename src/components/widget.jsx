@@ -28,7 +28,7 @@ const Widget = ({ type }) => {
 
   return (
     <div
-      className="w-60 h-40 flex  rounded-2xl p-4 bg-red-100 flex-grow m-3 "
+      className="w-60 h-40 flex  rounded-2xl p-4 bg-red-100 flex-grow m-3"
       id="widget"
     >
       <div className="w-1/2 flex flex-col space-y-4">
