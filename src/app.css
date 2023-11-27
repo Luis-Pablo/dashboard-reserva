@@ -1,3 +1,25 @@
+/* sidebar*/
 #sidebar span{
     color: black;
+}
+
+
+/* layout*/
+#Dark {
+  background-color: #282c34;
+  color: white;
+}
+
+#Light {
+  background-color: #f2f4f6;
+   color: black;
+}
+
+/* chart, dataTable and widget*/
+#chart,
+#material,
+#widget{
+ -webkit-box-shadow: 0px 10px 4px -10px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px 10px 4px -10px rgba(0,0,0,0.53);
+box-shadow: 0px 10px 4px -10px rgba(0,0,0,0.53); 
 }

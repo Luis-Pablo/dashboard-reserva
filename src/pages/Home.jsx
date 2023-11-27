@@ -7,19 +7,12 @@ const Home = () => {
   return (
     <>
       <div className="flex gap-4 my-2 flex-wrap  mb-8 h-ful justify-center">
-        <Widget />
-        <Widget />
+        <Widget type={'lastMonth'} />
+        <Widget type={'currentMonth'} />
         <Chart />
       </div>
 
       <div className="flex gap-10 flex-wrap justify-center">
-        <Featured />
-        <Featured />
-        <Featured />
-        <Featured />
-        <Featured />
-        <Featured />
-        <Featured />
         <Featured />
       </div>
     </>

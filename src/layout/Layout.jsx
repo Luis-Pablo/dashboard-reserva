@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import { Outlet } from "react-router-dom";
 import { useThemeContext } from "../context/ThemeContext";
-import './layout.css'
+import '../app.css'
 
 const Layout = () => {
   const { contextTheme} = useThemeContext();

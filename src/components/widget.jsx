@@ -1,41 +1,25 @@
 import { ArrowSmallUpIcon, UserIcon } from "@heroicons/react/24/outline";
-'./widget.css'
+import { Link } from "react-router-dom";
+'../app.css';
+
 const Widget = ({ type }) => {
   let data;
 
-
-
   switch (type) {
-    case "user":
+    case "lastMonth":
       data = {
-        title: "USERS",
-        isMoney: false,
-        link: "See all users",
-        icon: <UserIcon className="h-6 w-6 text-gray-500" />,
+        title: "Ocupación mes anterior",
+        total: 600,
+        percent: 60,
+        link: <Link to="/hotels">Ver</Link>,
       };
       break;
-    case "order":
+    case "currentMonth":
       data = {
-        title: "ORDERS",
-        isMoney: false,
-        link: "View all orders",
-        icon: <UserIcon className="h-6 w-6 text-gray-500" />,
-      };
-      break;
-    case "earning":
-      data = {
-        title: "EARNINGS",
-        isMoney: true,
-        link: "View net earnings",
-        icon: <UserIcon className="h-6 w-6 text-gray-500" />,
-      };
-      break;
-    case "balance":
-      data = {
-        title: "BALANCE",
-        isMoney: true,
-        link: "See details",
-        icon: <UserIcon className="h-6 w-6 text-gray-500" />,
+        title: "Ocupación mes actual",
+        total: 600,
+        percent: 65,
+        link: <Link to="/hotels">Ver</Link>,
       };
       break;
     default:
@@ -48,15 +32,17 @@ const Widget = ({ type }) => {
       id="widget"
     >
       <div className="w-1/2 flex flex-col space-y-4">
-        <span className="h-2/6 text-base font-bold text-gray-500">Hotel</span>
-        <span className="h-2/6 text-3xl">100</span>
-        <span className="h-2/6">Link</span>
+        <span className="h-2/6 text-base font-bold text-gray-500">
+          {data.title}
+        </span>
+        <span className="h-2/6 text-3xl">{data.total}</span>
+        <span className="h-2/6">{data.link}</span>
       </div>
       <div className="w-1/2 text-sm">
         <div className="flex flex-row h-3/4 justify-end">
           <ArrowSmallUpIcon className="h-6 w-6 text-gray-500 font-semibold" />
-          100%
-        </div>
+          {data.percent}%
+        </div> 
         <div className="flex justify-end">
           <UserIcon className=" after:only:h-6 w-6 text-gray-500" />
         </div>

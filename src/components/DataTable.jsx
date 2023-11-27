@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MaterialTable from "@material-table/core";
 import { WalletIcon } from "@heroicons/react/24/outline";
-import "./dataTable.css";
+import "../app.css";
 import axios from "axios";
 
 const DataTable = ({ title, columns, dataTab, path }) => {
