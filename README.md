@@ -1,6 +1,6 @@
 
-## Aplicacion reservas
-Aplicación web que conecta a oferentes de servicios de alojamiento con clientes. Permite a los clientes buscar por comuna, precio y si tiene disponibilidad en las fechas en las que requiere el servicio.
+## Dashboard reservas
+Panel de Administración que permite gestionar los datos la aplicación web reservas. Facilita la creación, actualización y eliminación de hoteles, habitaciones y usuarios.
 
 ### Ejecución
 Para ejecutar la aplicación ingresar el siguiente comando:
