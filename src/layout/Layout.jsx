@@ -9,12 +9,12 @@ const Layout = () => {
 
   return (
     <>
-      <div className="flex w-full overflow-hidden pe-2 " id={contextTheme}>
+      <div className="flex overflow-hidden pe-2 " id={contextTheme}>
         <Sidebar />
         <div className="w-full  flex-col">
           <Navbar />
 
-          <main className="container mx-auto py-6 sm:px-6 lg:px-8 border-2 border-indigo-600  rounded-xl">
+          <main className="w-full py-6 px-6 lg:px-8 border-2 border-indigo-600  rounded-xl">
             <Outlet />
           </main>
         </div>

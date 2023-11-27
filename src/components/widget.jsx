@@ -11,7 +11,7 @@ const Widget = ({ type }) => {
         title: "Ocupación mes anterior",
         total: 600,
         percent: 60,
-        link: <Link to="/hotels">Ver</Link>,
+        link: <span to="/hotel">Ver</span>,
       };
       break;
     case "currentMonth":
@@ -19,7 +19,7 @@ const Widget = ({ type }) => {
         title: "Ocupación mes actual",
         total: 600,
         percent: 65,
-        link: <Link to="/hotels">Ver</Link>,
+        link: <span to="/hotel">Ver</span>,
       };
       break;
     default:

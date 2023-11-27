@@ -32,14 +32,17 @@ const Sidebar = () => {
   };
  
   return (
-    <div className="flex-none w-24 h-screen text-white p-7 overflow-hidden  lg:hover:w-60 text-lg left-0 group transition duration-700 ease-in-out" id={contextTheme}>
-      <div className="fixed left-3 ">
+    <div
+      className="flex-none w-24	h-screen text-white pt-7 overflow-hidden  lg:hover:w-60 text-lg left-0 group transition duration-700 ease-in-out "
+      id={contextTheme}
+    >
+      <div className="fixed left-2 ">
         <div className="mt-5">
-          <ul>
+          <ul className="overflow-hidden">
             <li className="lg:hover:rounded-xl lg:hover:bg-orange-200 px-2 py-1 mr-2">
               <Link className="flex gap-3 m-3 " to="/">
                 <Squares2X2Icon className="h-6 w-6 text-gray-500" />
-                <span className="ms-4 font-semibold invisible lg:group-hover:visible">
+                <span className="lg:ms-4 font-semibold hidden lg:group-hover:flex">
                   Dashboard
                 </span>
               </Link>
@@ -50,7 +53,7 @@ const Sidebar = () => {
           <li className="lg:hover:rounded-xl lg:hover:bg-orange-200 px-2 py-1 mr-2">
             <Link className="p-3 flex gap-3" to="/user">
               <UsersIcon className="h-6 w-6 text-gray-500" />
-              <span className="ms-4 font-medium text-base invisible lg:group-hover:visible">
+              <span className="ms-4 font-medium text-base hidden lg:group-hover:flex">
                 Usuario
               </span>
             </Link>
@@ -58,7 +61,7 @@ const Sidebar = () => {
           <li className="lg:hover:rounded-xl lg:hover:bg-orange-200 px-2 py-1 mr-2">
             <Link className="p-3 flex gap-3" to="hotel">
               <BuildingOfficeIcon className="h-6 w-6 text-gray-500" />
-              <span className="ms-4 font-medium text-base invisible lg:group-hover:visible">
+              <span className="ms-4 font-medium text-base hidden lg:group-hover:flex">
                 Hotel
               </span>
             </Link>
@@ -66,7 +69,7 @@ const Sidebar = () => {
           <li className="lg:hover:rounded-xl lg:hover:bg-orange-200 px-2 py-1 mr-2">
             <Link className="p-3 flex gap-3" to="room">
               <FolderIcon className="h-6 w-6 text-gray-500" />
-              <span className="ms-4 font-medium text-base invisible lg:group-hover:visible">
+              <span className="ms-4 font-medium text-base hidden lg:group-hover:flex">
                 Habitación
               </span>
             </Link>
@@ -74,7 +77,7 @@ const Sidebar = () => {
           <li className="lg:hover:rounded-xl lg:hover:bg-orange-200 px-2 py-1 mr-2">
             <Link className="p-3 flex gap-3 " to="profile">
               <UserIcon className="h-6 w-6 text-gray-500" />
-              <span className="ms-4 font-medium text-base invisible lg:group-hover:visible">
+              <span className="ms-4 font-medium text-base hidden lg:group-hover:flex">
                 Perfil
               </span>
             </Link>
@@ -83,14 +86,14 @@ const Sidebar = () => {
             <Link className="p-3 flex gap-3 ">
               <ArrowRightOnRectangleIcon className="h-6 w-6 text-gray-500" />
               <span
-                className="ms-4 font-medium text-base invisible lg:group-hover:visible"
+                className="ms-4 font-medium text-base hidden lg:group-hover:flex"
                 onClick={handleLogout}
               >
                 Cerrar sesión
               </span>
             </Link>
           </li>
-          <li className="flex pt-4 group-hover:ps-5">
+          <li className="flex pt-4 ps-4">
             <ReactSwitch
               onChange={handleSwitch}
               checked={checked}
