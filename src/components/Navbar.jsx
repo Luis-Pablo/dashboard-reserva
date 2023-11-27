@@ -4,32 +4,25 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
-
-
-const navigation = [
-  { name: "Dashboard", href: "/", current: true },
- 
-];
-const username = 'Pablo'
+const navigation = [{ name: "Dashboard", href: "/", current: true }];
+const username = "Pablo";
 const image =
   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80";
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Navbar = () => {  
+const Navbar = () => {
   const { dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     navigate("/login");
   };
-  
 
   return (
-    <div className="w-full sm:me-2" >
+    <div className="w-full sm:me-2">
       <Disclosure as="nav">
         {({ open }) => (
           <>
