@@ -1,8 +1,19 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Dashboard reservas
+Panel de Administración que permite gestionar los datos la aplicación web reservas. Facilita la creación, actualización y eliminación de hoteles, habitaciones y usuarios.
 
-Currently, two official plugins are available:
+### Ejecución
+Para ejecutar la aplicación ingresar el siguiente comando:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`$  npm run dev`
+
+### Variables de entorno
+Al interior de la carpeta /dashboard-reserva debes crear un documento .env el cual debe contener la siguiente variable:
+```javascript
+ VITE_REACT_APP_HOST =
+
+```
+
+### Link a proyectos
+[Aplicación reservas](https://frontend-reservas.vercel.app/)
+[Panel de administracion reservas](https://dashboard-reserva.vercel.app/)
