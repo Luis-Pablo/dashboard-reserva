@@ -9,9 +9,10 @@ const forgotPassword = false;
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
-    usename: undefined,
+    username: undefined,
     password: undefined,
   });
+  const [checked, setChecked] = useState(false)
 
   const { error, dispatch, loading } = useContext(AuthContext);
 
@@ -139,11 +140,33 @@ const Login = () => {
                 onClick={login}
                 disabled={loading}
               >
-                Sign in
+                Ingresar
               </button>
             </div>
           </form>
           {error && <span>{error.message}</span>}
+          <div className="flex flex-col mt-10 gap-1">
+            <div className="flex justify-center gap-3 ">
+              <label htmlFor="checkbox" className="gap-4 ">
+                Clic para ver usuario y contraseña
+              </label>
+              <input
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+                className="flex justify-center "
+                checked={checked}
+                onClick={() => setChecked(!checked)}
+              />
+            </div>
+            <span className="text-center text-gray-400">
+              {checked && `usuario: pablo`}
+            </span>
+            <span className="text-center text-gray-400">
+              {checked && `contraseña: 1234`}
+            </span>
+          </div>
+
           {forgotPassword && (
             <p className="mt-10 text-center text-sm text-gray-500">
               Not a member?{" "}
